@@ -167,14 +167,18 @@ embed {
 
 
 /* About Me Page Related */
-.soclinks {
+.soclinks_container {
 	/* I swear this never works, why */
 	display: block;
-	align-items: center;	
+	align-items: center;
 }
+	.soclinks_item {
+			background-color: #ffffff;
+			padding: 0.5rem;
+	}
+
 .fa-2x {
 	color: var(--text-test);
-
 }
 
 /* Small Screens */
@@ -182,7 +186,7 @@ embed {
 	.navbar {
 		bottom: 0;
 		width: 100vw;
-		height: 5rem;	
+		height: 5rem;
 	}
 		.navbar-nav {
 			flex-direction: row;
@@ -218,7 +222,7 @@ embed {
 	}
 
 	.navbar:hover .logo i {
-		transform: rotate(90deg);		
+		transform: rotate(90deg);
 		margin-left: 3rem;
 	}
 }

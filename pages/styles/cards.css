@@ -15,7 +15,7 @@
 }
 
 .card-container {
-	columns: 2 200px;
+	columns: 4 0.5rem;
 	column-gap: 1.5rem;
 	width: 90%;
 	height: 90%;
@@ -28,13 +28,13 @@
 		width: 150px;
 		margin: 0.3rem;
 		display: inline-block;
-		width: 80%;
+		width: 50%;
 		border: solid 2px var(--color-bl);
 		padding: 5px;
 		border-radius: 1px;
 		transition: all .25s ease-in-out;
-		background-color: var(--color-br);	
-		align-items: center;	
+		background-color: var(--color-br);
+		align-items: center;
 	}
 
 	.card-container-item-text {
@@ -47,5 +47,5 @@
 		align-self: center;
 		image-rendering: pixelated;
 		image-rendering: -moz-crisp-edges;
-		image-rendering: crisp-edges;	
-	}	
+		image-rendering: crisp-edges;
+	}
