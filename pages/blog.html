@@ -71,7 +71,7 @@
 						<p><span class="text_special">- </span>Best way to contact you(email, discord, twitter DMs, etc.)</p>
 						<p><span class="text_special">- </span>Description of your commission.</p>
 						<hr>
-						<form action="LoginForm.php" class="formcontainer" method="post">
+						<form action="commish_ticket.php" class="formcontainer" method="post">
 							<h4>Commission Ticket</h4>
 							<table>
 								<tr>
@@ -88,8 +88,9 @@
 									<p class="disclaimer">If you entered "Phone", please provide a phone number in the next text field.</p>
 								</tr>
 								<tr>
+									<!-- this would be better set up as a drop-down menu, but I don't know how to get inputs from a drop-down menu -J -->
 									<td>Phone Number <p>(optional, unless above field is "Phone"):</p></td>
-									<td><br><input type="text" name="pnumber"></td>
+									<td><br><input type="text" name="phone"></td>
 								</tr>
 								<tr>
 									<td>Commission Description:</td>
