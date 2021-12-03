@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Index - James Yakicic's Portfolio Site</title>
+		<title>Blog - James Yakicic's Portfolio Site</title>
 		<link rel="stylesheet" href="./styles/media.css">
 		<link rel="stylesheet" href="./styles/transition.css">
-		<link rel="stylesheet" href="./styles/gallery2.css">
+		<link rel="stylesheet" href="./styles/forms.css">
 				<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="../icons/favicon1.png">
 		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -53,58 +53,75 @@
 						<i class="fas fa-comments"></i>
 						<span class="link-text">Blog / Commission Info</span>
 					</a>
-				</li>				
+				</li>
 			</ul>
 		</nav>
 		<main>
-			<h1>Hello,</h1>
-			<h3>and welcome to my site!</h3>
+			<h1>Blog</h1>
+			<h3>and Commission Info.</h3>
 
 			<div class="webcontainer">
-				<p>I am a traditional artist who also enjoys working with web-based design and functionality. I'm still improving my skills, everything you see on this site was made from Basic HTML & CSS. It can and <strong>will</strong> be improved over time.</p>
-				<p>Here you will find a collection of my works and recent projects I have amassed over my years in college and highschool. Hope you enjoy!</p>
-				<p>Here are some of my works you can expect to see across this site.</p>
-				<div class="grid-container">
-					<div class="grid-container-item">
-						<h5>Digital / Traditional Art</h5>
-						<img src="../site_content/drawings/ohworm.png">
-					</div>
-					<div class="grid-container-item">
-						<h5>Web Development / Design</h5>
-						<img src="../screenshots/code1.PNG">
-					</div>
-					<div class="grid-container-item">
-						<h5>Pixel Art</h5>
-						<img src="../site_content/pixelart/dimerium_empire_painting.png">
-					</div>
-					<div class="grid-container-item">
-						<h5>My Contacts</h5>
-						<img src="../site_content/skins/Grevoth_.png">
-					</div>
+				<div class="blogcontainer">
+					<h4>December 3rd, 2021</h4>
+					<h2>Commission Info</h2>
+					<p id="disclaimer">I don't have an official commission sheet available, but when I do, it will be available here.</p>
+					<p>Want to commission me? Send me a ticket below, with the following information:
+						<p><span class="text_special">- </span>Email Address</p>
+						<p><span class="text_special">- </span>Company (optional)</p>
+						<p><span class="text_special">- </span>Best way to contact you(email, discord, twitter DMs, etc.)</p>
+						<p><span class="text_special">- </span>Description of your commission.</p>
+						<hr>
+						<form action="LoginForm.php" class="formcontainer" method="post">
+							<h4>Commission Ticket</h4>
+							<table>
+								<tr>
+									<td>Email Address:</td>
+									<td><br><input type="text" name="email"></td>
+								</tr>
+								<tr>
+									<td>Company (optional):</td>
+									<td><br><input type="text" name="company"></td>
+								</tr>
+								<tr>
+									<td>Best Contact</td>
+									<td><br><input type="text" name="contact"></td>
+									<p class="disclaimer">If you entered "Phone", please provide a phone number in the next text field.</p>
+								</tr>
+								<tr>
+									<td>Phone Number <p>(optional, unless above field is "Phone"):</p></td>
+									<td><br><input type="text" name="pnumber"></td>
+								</tr>
+								<tr>
+									<td>Commission Description:</td>
+									<td><br><input type="text" name="comm_desc" id="description"></td>
+								</tr>
+							</table>
+							<br>
+							<input class="stylebutton" type="submit" value="submit"/>
+						</form>
 				</div>
-
-				<!-- <a href="test.html">Test HTML</a> -->
 			</div>
 			<br />
 
 			<div class="transition">
 				<div class="transition-item">
-					<a href="blog.html" class="transition-link">
+					<a href="aboutme.html" class="transition-link">
 						<div class="transition-item-container">
 							<i class="fas fa-chevron-left"></i>
-							<span class="transition-text">Blog</span>
+							<span class="transition-text">About Me</span>
 						</div>
 					</a>
 				</div>
 				<div class="transition-item">
-					<a href="webdev.html" class="transition-link">
+					<a href="index.html" class="transition-link">
 						<div class="transition-item-container">
-							<span class="transition-text">Web Development</span>
+							<span class="transition-text">Home</span>
 							<i class="fas fa-chevron-right"></i>
 						</div>
 					</a>
 				</div>
 			</div>
+
 		</main>
 		<!-- footer should not show on mobile mode.
 		<footer>

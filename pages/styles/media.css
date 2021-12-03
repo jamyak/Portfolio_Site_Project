@@ -173,11 +173,25 @@ embed {
 	align-items: center;
 }
 	.soclinks_item {
-			background-color: #ffffff;
-			padding: 0.5rem;
+			background-color: var(--color-br);
+			padding: 1rem;
+			padding-left: 2rem;
 	}
 
 .fa-2x {
+	color: var(--text-test);
+}
+
+/* Blog Page Related */
+#disclaimer {
+	font-style: italic;
+}
+.blogcontainer {
+	background-color: var(--color-br);
+	padding: 1rem;
+}
+/* For golden highlights ;) */
+.text_special {
 	color: var(--text-test);
 }
 
